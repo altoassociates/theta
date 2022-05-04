@@ -1,0 +1,1552 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Theta Token</title>
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/css.main/style.css" rel="stylesheet" type="text/css">
+    <link href="/scss/app.css?v=1633800331" rel="stylesheet">
+    <link href="/scss/app.css?v=1633800331" rel="stylesheet" type="text/css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <script async="" src="/cdn-cgi/bm/cv/669835187/api.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdn.rawgit.com/google/code-prettify/master/loader/prettify.css">
+    <link href="./css.main/style.css" rel="stylesheet">
+    <link href="./css.main/app.css" rel="stylesheet">
+    <link href="./css.main/mapbox.css" rel="stylesheet">
+    <link href="./cs.main/MarkerCluster.css" rel="stylesheet">
+    <link href="./css.main/MarkerCluster.Default.css" rel="stylesheet">
+    <link href="./css.main/www-player-webp.css" rel="stylesheet">
+
+    <title>Theta Token</title>
+    <link href="/scss/app.css?v=1633800331" rel="stylesheet" type="text/css">
+
+    <!-- 
+    Facebook Pixel Code -->
+    <!-- <script type="text/javascript" async="" src="https://www.googleadservices.com/pagead/conversion_async.js"></script><script src="https://connect.facebook.net/signals/config/930741920411015?v=2.9.47&amp;r=stable" async=""></script><script async="" src="https://connect.facebook.net/en_US/fbevents.js"></script><script>
+        !function(f,b,e,v,n,t,s)
+        {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+                n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+            if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+            n.queue=[];t=b.createElement(e);t.async=!0;
+            t.src=v;s=b.getElementsByTagName(e)[0];
+            s.parentNode.insertBefore(t,s)}(window, document,'script',
+                'https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init', '930741920411015');
+        fbq('track', 'PageView');
+    </script> -->
+    <!-- <noscript>
+        <img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=930741920411015&ev=PageView&noscript=1"/>
+    </noscript>
+     End Facebook Pixel Code -->
+
+    <!-- Global site tag (gtag.js) - Google AdWords: 828692451 -->
+    <!-- <script async="" src="https://www.googletagmanager.com/gtag/js?id=AW-828692451"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'AW-828692451');
+    </script> --> 
+    <!-- End Global site tag -->
+
+<!-- <script async="" src="/cdn-cgi/bm/cv/669835187/api.js"></script><link rel="stylesheet" type="text/css" href="https://cdn.rawgit.com/google/code-prettify/master/loader/prettify.css"><script src="https://googleads.g.doubleclick.net/pagead/viewthroughconversion/828692451/?random=1635055898664&amp;cv=9&amp;fst=1635055898664&amp;num=1&amp;bg=ffffff&amp;guid=ON&amp;resp=GooglemKTybQhCsO&amp;eid=376635470&amp;u_h=768&amp;u_w=1366&amp;u_ah=728&amp;u_aw=1366&amp;u_cd=24&amp;u_his=4&amp;u_tz=60&amp;u_java=false&amp;u_nplug=5&amp;u_nmime=2&amp;gtm=2oaak0&amp;sendb=1&amp;ig=1&amp;data=event%3Dgtag.config&amp;frm=0&amp;url=https%3A%2F%2Fwww.thetatoken.org%2F&amp;ref=https%3A%2F%2Fwww.google.com%2F&amp;tiba=Theta%20Token&amp;hn=www.googleadservices.com&amp;async=1&amp;rfmt=3&amp;fmt=4"></script> -->
+</head>
+   
+<body>
+    <div id="app">
+        <div data-reactroot="">
+            <nav class="th-navbar">
+                <div class="th-navbar-content">
+                    <div class="left-content">
+                        <a href="/" class="th-navbar-heading"></a>
+                    </div>
+                    <div class="middle-content">
+                        <ul class="links">
+                            <li><a>Network</a></li>
+                            <li><a>News</a></li>
+                            <li><a>Team</a></li>
+                            <li><a>Roadmap</a></li>
+                            <li><a href="https://docs.thetatoken.org" target="_blank">Docs</a></li>
+                            <li><a href="/mnemonic">Wallet</a></li>
+                            <li><a href="https://explorer.thetatoken.org" target="_blank">Explorer</a></li>
+                        </ul>
+                    </div>
+                    <div class="right-content">
+                        <div class="language-flags"><a class="language-flag">
+                            <img src="/logo_files/english@2x.png"></a><a class="language-flag">
+                            <img src="/logo_files/south-korea@2x.png"></a></div>
+                        <ul class="th-social-icons th-social-icons--size-">
+                            <li><a target="_blank" href="https://discord.gg/c7GCZhAP">
+                                <img src="logo_files/discord@2x.png"></a>
+                            </li>
+                            <li><a href="https://www.facebook.com/ThetaNetwork/" target="_blank">
+                                <img src="/logo_files/fb@2x.png"></a>
+                            </li>
+                            <li><a href="https://twitter.com/Theta_Network" target="_blank">
+                                <img src="/logo_files/twitter@2x.png"></a>
+                            </li>
+                            <li><a href="https://medium.com/theta-network" target="_blank">
+                                <img src="/logo_files/medium@2x.png"></a>
+                            </li>
+                            <li><a href="https://github.com/thetatoken" target="_blank">
+                                <img src="/logo_files/github@2x.png"></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="th-flyout-nav"><a class="th-flyout-nav__close-button">
+                    <img src="/logo_files/close-nav@2x.png"></a>
+                    <ul class="th-flyout-nav__links">
+                        <li class="logo"><a href="/">
+                            <img src="/logo_files/nav@2x.png"></a></li>
+                        <li><a>Network</a></li>
+                        <li><a>News</a></li>
+                        <li><a>Team</a></li>
+                        <li><a href="https://medium.com/theta-network" target="_blank"></a></li>
+                        <li><a>Partners</a></li>
+                        <li><a href="https://docs.thetatoken.org" target="_blank">Docs</a></li>
+                        <li><a href="/mnemonic">Wallet</a></li>
+                        <li><a href="https://explorer.thetatoken.org" target="_blank">Explorer</a></li>
+                    </ul>
+                    <ul class="th-social-icons th-social-icons--size-">
+                        <li><a target="_blank" href="https://discord.gg/vCXJd5YKDt">
+                            <img src="/logo_files/discord@2x.png"></a></li>
+                        <li><a href="https://www.facebook.com/ThetaNetwork/" target="_blank"><img
+                                    src="/logo_files/fb@2x.png"></a></li>
+                        <li><a href="https://twitter.com/Theta_Network" target="_blank"><img
+                                    src="/logo_files/twitter@2x.png"></a></li>
+                        <li><a href="https://medium.com/theta-network" target="_blank"><img
+                                    src="/logo_files/medium@2x.png"></a></li>
+                        <li><a href="https://github.com/thetatoken" target="_blank"><img
+                                    src="/logo_files/github@2x.png"></a></li>
+                    </ul>
+                </div>
+            </nav>
+            <div class="app-wrapper">
+                <div id="page-wrapper-with-scroll" class="page-wrapper">
+                    <div class="home-page">
+                        <div id="hero" class="testnet-hero">
+                            <div class="testnet-hero__wrapper">
+                                <div class="testnet-hero__content">
+                                    <div class="testnet-hero__content-top">
+                                        <div class="testnet-hero__content-top-left"><img
+                                                src="/logo_files/large-with-network@2x.png"
+                                                class="testnet-hero__theta-network-logo">
+                                            <div class="testnet-hero__pitch">Next generation video and entertainment
+                                                blockchain powered by you.</div>
+                                        </div>
+                                        <div class="testnet-hero__content-top-right">
+                                            <div class="testnet-hero__video-title">Watch What We're Doing</div>
+                                            <div class="testnet-hero__video-wrapper">
+                                                <iframe
+                                                    src="https://www.youtube.com/embed/OQR7GVoV-24?rel=0&amp;amp;showinfo=0"
+                                                    frameborder="0" allowfullscreen="">
+                                                </iframe></div>
+                                        </div>
+                                    </div>
+                                    <div class="testnet-hero__content-middle">
+                                        <div class="testnet-hero__content-middle">
+                                            <div class="th-countdown">
+                                                <div class="countdown-title">Theta Ecosystem 2022</div>
+                                                <div class="countdown-subtitle"><strong>Announcing TDROP Token</strong>
+                                                </div>
+                                                <div class="countdown-guardian">Read the Theta Ecosystem and TDROP Token
+                                                    Whitepaper</div><a
+                                                    href="https://s3.us-east-2.amazonaws.com/assets.thetatoken.org/Theta-Ecosystem-2022-and-TDROP-Whitepaper.pdf?v=1634767383.814"
+                                                    target="_blank"
+                                                    class="th-button th-button--large th-button--bg-gradient documentation-section__download-whitepaper-button">Learn
+                                                    More</a>
+                                            </div>
+                                        </div>
+                                        <div class="th-hot-off-the-press">
+                                            <div class="th-hot-off-the-press__title">Hot off the press</div>
+                                            <div class="th-hot-off-the-press__article">First Theta / Ethereum bridge
+                                                launches on Theta Testnet, with Mainnet integration to follow soon</div>
+                                            <a href="https://medium.com/theta-network/meter-passport-launches-theta-ethereum-bridge-on-theta-testnet-with-mainnet-integration-to-c398349e96e6"
+                                                target="_blank" class="th-hot-off-the-press__learn-more">Learn More</a>
+                                        </div>
+                                        <div class="th-testnet-partners">
+                                            <div class="th-testnet-partners__title">
+                                                <div class="th-testnet-partners__live-badge">Live</div>
+                                                <span>Partners</span>
+                                            </div>
+                                            <div class="th-testnet-partners__cards">
+                                                <a href="https://www.theta.tv"
+                                                    target="blank" class="th-testnet-partner-card">
+                                                    <div class="th-testnet-partner-card__thumb-wrapper">
+                                                        <img src="/logo_files/thumb_thetatv@2x.png"
+                                                            class="th-testnet-partner-card__thumb">
+                                                        </div>
+                                                        <img src="/logo_files/logo_thetatv@2x.png"
+                                                        class="th-testnet-partner-card__logo">
+                                                </a>
+                                                <a href="https://www.worldpokertour.com/tv-shows/theta-tv/"
+                                                    target="blank" class="th-testnet-partner-card">
+                                                    <div class="th-testnet-partner-card__thumb-wrapper">
+                                                        <img src="/logo_files/thumb_wpt@2x.png" class="th-testnet-partner-card__thumb">
+                                                    </div>
+                                                    <img src="/logo_files/logo_wpt@2x.png" class="th-testnet-partner-card__logo">
+                                                </a>
+                                                <a href="https://gfuel.com/pages/watch-esports" target="blank"
+                                                    class="th-testnet-partner-card">
+                                                    <div class="th-testnet-partner-card__thumb-wrapper">
+                                                        <img src="/logo_files/thumb_gfuel@2x.png" class="th-testnet-partner-card__thumb">
+                                                    </div>
+                                                    <img src="/logo_files/logo_gfuel@2x.png" class="th-testnet-partner-card__logo">
+                                                </a>
+                                            </div>
+                                            <div class="th-testnet-partners__cards">
+                                                <a
+                                                    href="https://www.contv.com/details-movie/contvanimelive/contv-anime/"
+                                                    target="blank" class="th-testnet-partner-card">
+                                                    <div class="th-testnet-partner-card__thumb-wrapper">
+                                                        <img src="/logo_files/thumb_contv@2x.png" class="th-testnet-partner-card__thumb">
+                                                    </div>
+                                                    <img src="/logo_files/logo_contv@2x.png" class="th-testnet-partner-card__logo">
+                                                </a>
+                                                <a href="https://sizzlepopcorn.com/pages/entertainment"
+                                                    target="blank" class="th-testnet-partner-card">
+                                                    <div class="th-testnet-partner-card__thumb-wrapper">
+                                                        <img src="/logo_files/thumb_sizzle@2x.png" class="th-testnet-partner-card__thumb">
+                                                    </div>
+                                                    <img src="/logo_files/logo_sizzle@2x.png" class="th-testnet-partner-card__logo">
+                                                </a>
+                                                <a href="https://shoutfactorytvlive.com/mst3k-thetatv"
+                                                    target="blank" class="th-testnet-partner-card">
+                                                    <div class="th-testnet-partner-card__thumb-wrapper">
+                                                        <img src="/logo_files/thumb_shout@2x.png" class="th-testnet-partner-card__thumb">
+                                                    </div>
+                                                    <img src="/logo_files/logo_shout@2x.png" class="th-testnet-partner-card__logo">
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="testnet-hero__content-bottom">
+                                        <div class="th-quote-section">
+                                            <div class="th-quote-section__avatar-and-body">
+                                                <img src="/logo_files/steve_chen@2x.png" class="th-quote-section__avatar">
+                                                <div class="th-quote-section__body">
+                                                    <div class="th-quote-section__by">
+                                                        <div class="th-quote-section__name">Steve Chen</div>
+                                                        <div class="th-quote-section__title">Co-founder</div>
+                                                        <img src="/logo_files/youtube@2x.png" class="th-quote-section__company-logo">
+                                                    </div>
+                                                    <div class="th-quote-section__quote">Theta’s innovation is set to
+                                                        disrupt today’s online video industry much in the same way that
+                                                        the YouTube platform did to traditional video back in 2005. One
+                                                        of our biggest challenges had been the high costs of delivering
+                                                        video to various parts of the world, and this problem is only
+                                                        getting bigger with HD, 4K and higher quality video streams,”
+                                                        said Steve Chen, Co-Founder of YouTube. “I’m excited to be part
+                                                        of the next evolution of the streaming space, helping Theta
+                                                        create a decentralized peer-to-peer network that can offer
+                                                        improved video delivery at lower costs.
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <ul class="th-social-icons th-social-icons--size-large">
+                                                <li><a target="_blank" href="https://discord.gg/c7GCZhAP">
+                                                        <img src="/logo_files/discord@2x.png">
+                                                    </a>
+                                                </li>
+                                                <li><a href="https://www.facebook.com/ThetaNetwork/"
+                                                        target="_blank">
+                                                        <img src="/logo_files/fb@2x.png">
+                                                    </a>
+                                                </li>
+                                                <li><a href="https://twitter.com/Theta_Network" target="_blank">
+                                                        <img src="/logo_files/twitter@2x.png">
+                                                    </a>
+                                                </li>
+                                                <li><a href="https://medium.com/theta-network" target="_blank">
+                                                        <img src="/logo_files/medium@2x.png">
+                                                    </a>
+                                                </li>
+                                                <li><a href="https://github.com/thetatoken" target="_blank">
+                                                        <img src="/logo_files/github@2x.png">
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                       
+                        <div class="section-spacer"></div>
+                        <div id="nodes-section" class="nodes-section">
+                            <div class="nodes-section__wrapper">
+                                <div data-text="Live Network Stats" class="nodes-section__title">Live Network Stats
+                                </div>
+                                <div class="nodes-section__content">
+                                    <div class="nodes-legend">
+                                        <div class="nodes-legend-item nodes-legend-item--ec">
+                                            <div class="nodes-legend-item__title">Edge Node (130358)</div>
+                                        </div>
+                                        <div class="nodes-legend-item nodes-legend-item--gn">
+                                            <div class="nodes-legend-item__title">Guardian Node (3504)</div>
+                                        </div>
+                                        <div class="nodes-legend-item nodes-legend-item--validator">
+                                            <div class="nodes-legend-item__title">Enterprise Validator Node (16)</div>
+                                        </div>
+                                    </div>
+                                    <iframe id="nodes-map-iframe" src=""></iframe>
+                                    <div id="join-the-network-section" class="th-products-section">
+                                        <div class="th-products-section__title">Join the Network</div>
+                                        <div class="th-products-section__subtitle">Download the latest tools to
+                                            participate in the Theta Network.</div>
+                                    <div><a href="/mnemonic" >UNLOCK WALLET</a></div>
+                                        <div class="th-product-section">
+                                            <div class="th-product-section__title th-product-section__title--green">
+                                                Theta Guardian Node</div>
+                                            <div class="th-product-section__subtitle">Earn TFUEL by staking THETA</div>
+                                            <div class="th-product-section__buttons">
+                                                <a href="https://api.thetatoken.org/downloads/guardian-node/windows"
+                                                    target="_blank" class="th-product-section__button">
+                                                    <img src="/logo_files/windows@2x.png"></a>
+                                                    <a href="https://api.thetatoken.org/downloads/guardian-node/macos"
+                                                    target="_blank" class="th-product-section__button">
+                                                    <img src="/logo_files/macos@2x.png"></a>
+                                                    <a href="https://api.thetatoken.org/downloads/guardian-node/linux"
+                                                    target="_blank" class="th-product-section__button">
+                                                    <img src="/logo_files/linux@2x.png"></a>
+                                                    <a href="https://github.com/thetatoken/guardian-mainnet-guide/blob/master/docs/CLI.md#running-a-guardian-node-through-command-line"
+                                                    target="_blank" class="th-product-section__button">
+                                                    <img src="/logo_files/cli@2x.png">
+                                                </a>
+                                            </div>
+                                            <a href="https://github.com/thetatoken/guardian-mainnet-guide"
+                                                target="_blank"
+                                                class="th-button th-button--dashed-border th-button--medium th-button--grey"
+                                                style="margin-top: 20px;"> Getting Started Guide
+                                            </a>
+                                        </div>
+                                        <div class="th-product-section">
+                                            <div class="th-product-section__title th-product-section__title--blue">
+                                                Theta Edge Node
+                                            </div>
+                                            <div class="th-product-section__subtitle">Earn TFUEL by staking TFUEL</div>
+                                            <div class="th-product-section__buttons">
+                                                <a href="https://api.thetatoken.org/downloads/edge-node/windows"
+                                                    target="_blank" class="th-product-section__button">
+                                                    <img src="/logo_files/windows@2x.png">
+                                                </a>
+                                                <a href="https://api.thetatoken.org/downloads/edge-node/macos"
+                                                    target="_blank" class="th-product-section__button">
+                                                    <img src="/logo_files/macos@2x.png">
+                                                </a>
+                                                <a href="https://docs.thetatoken.org/docs/theta-edge-node-run-with-docker"
+                                                    target="_blank" class="th-product-section__button">
+                                                    <img src="/logo_files/linux@2x.png">
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="nodes-section__wrapper enterprise-validators">
+                                    <div data-text="Enterprise Validator Nodes" class="nodes-section__title">Enterprise
+                                        Validator Nodes</div>
+                                    <div class="validator-list">
+                                        <div class="partners-section__partners-logo-wrapper">
+                                            <img
+                                                src="/logo_files/google.png"
+                                                class="partners-section__partners-logo"></div>
+                                        <div class="partners-section__partners-logo-wrapper"><img
+                                                src="/logo_files/sony.png"
+                                                class="partners-section__partners-logo"></div>
+                                        <div class="partners-section__partners-logo-wrapper"><img
+                                                src="/logo_files/samsung.png"
+                                                class="partners-section__partners-logo"></div>
+                                        <div class="partners-section__partners-logo-wrapper"><img
+                                                src="/logo_files/caa@2x.png"
+                                                class="partners-section__partners-logo"
+                                                style="height: 38px; width: auto;"></div>
+                                        <div class="partners-section__partners-logo-wrapper"><img
+                                                src="/logo_files/binance.png"
+                                                class="partners-section__partners-logo"></div>
+                                        <div class="partners-section__partners-logo-wrapper"><img
+                                                src="/logo_files/blockchain_logo.png"
+                                                class="partners-section__partners-logo"></div>
+                                        <div class="partners-section__partners-logo-wrapper"><img
+                                                src="/logo_files/gumi_logo.png"
+                                                class="partners-section__partners-logo"></div>
+                                        <div class="partners-section__partners-logo-wrapper"><img
+                                                src="/logo_files/dhvc@2x.png"
+                                                class="partners-section__partners-logo"></div>
+                                        <div class="partners-section__partners-logo-wrapper"><img
+                                                src="/logo_files/private-equity-group@2x.png"
+                                                class="partners-section__partners-logo"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="section-spacer"></div>
+                        <div id="in-the-news-section" class="in-the-news-section">
+                            <div class="in-the-news-section__wrapper">
+                                <div data-text="In The News" class="in-the-news-section__title">In The News</div>
+                                <div class="in-the-news-section__content">
+                                    <div class="in-the-news-section__logos-wrapper">
+                                        <div class="in-the-news-section__logos"><img
+                                                src="/logo_files/press_tc@2x.png"
+                                                class="investors-section__investor-logo"><img
+                                                src="/logo_files/press_altcoin-today@2x.png"
+                                                class="investors-section__investor-logo"><img
+                                                src="/logo_files/press_bc-exchange@2x.png"
+                                                class="investors-section__investor-logo"><img
+                                                src="/logo_files/press_bc-mag@2x.png"
+                                                class="investors-section__investor-logo"><img
+                                                src="/logo_files/press_blockchain-news@2x.png"
+                                                class="investors-section__investor-logo"><img
+                                                src="/logo_files/press_coin-journal@2x.png"
+                                                class="investors-section__investor-logo"><img
+                                                src="/logo_files/press_finance-magnates@2x.png"
+                                                class="investors-section__investor-logo"><img
+                                                src="/logo_files/press_finextra@2x.png"
+                                                class="investors-section__investor-logo"><img
+                                                src="/logo_files/press_flixed@2x.png"
+                                                class="investors-section__investor-logo"><img
+                                                src="/logo_files/press_forbes@2x.png"
+                                                class="investors-section__investor-logo"><img
+                                                src="/logo_files/press_huff@2x.png"
+                                                class="investors-section__investor-logo"><img
+                                                src="/logo_files/press_nasdaq@2x.png"
+                                                class="investors-section__investor-logo"><img
+                                                src="/logo_files/press_the-merkle@2x.png"
+                                                class="investors-section__investor-logo"><img
+                                                src="/logo_files/press_windows-central@2x.png"
+                                                class="investors-section__investor-logo"><img
+                                                src="/assets/logos/press/press_tc@2x.png"
+                                                class="investors-section__investor-logo"><img
+                                                src="/logo_files/press_altcoin-today@2x.png"
+                                                class="investors-section__investor-logo"><img
+                                                src="/logo_files/press_bc-exchange@2x.png"
+                                                class="investors-section__investor-logo"><img
+                                                src="/logo_files/press_bc-mag@2x.png"
+                                                class="investors-section__investor-logo"><img
+                                                src="/logo_files/press_blockchain-news@2x.png"
+                                                class="investors-section__investor-logo"><img
+                                                src="/logo_files/press_coin-journal@2x.png"
+                                                class="investors-section__investor-logo"><img
+                                                src="/logo_files/press_finance-magnates@2x.png"
+                                                class="investors-section__investor-logo"><img
+                                                src="/logo_files/press_finextra@2x.png"
+                                                class="investors-section__investor-logo"><img
+                                                src="/logo_files/press_flixed@2x.png"
+                                                class="investors-section__investor-logo"><img
+                                                src="/logo_files/press_forbes@2x.png"
+                                                class="investors-section__investor-logo"><img
+                                                src="/logo_files/press_huff@2x.png"
+                                                class="investors-section__investor-logo"><img
+                                                src="/logo_files/press_nasdaq@2x.png"
+                                                class="investors-section__investor-logo"><img
+                                                src="/logo_files/press_the-merkle@2x.png"
+                                                class="investors-section__investor-logo"><img
+                                                src="/logo_files/press_windows-central@2x.png"
+                                                class="investors-section__investor-logo"></div>
+                                    </div>
+                                    <div class="in-the-news-section__quote-and-news-items">
+                                        <div class="in-the-news-section__quote">
+                                            <!-- react-text: 259 -->The Theta blockchain is the only end-to-end
+                                            infrastructure for decentralized video streaming and delivery that provides
+                                            both technical and economic solutions...This is one of the most exciting new
+                                            blockchain ventures I have heard about.
+                                            <!-- /react-text -->
+                                            <div class="in-the-news-section__quote-by">- from huffingtonpost.com</div>
+                                        </div>
+                                        <div class="in-the-news-section__news-items-wrapper">
+                                            <div class="in-the-news-section__news-items">
+                                                <a href="https://medium.com/theta-networkmeter-passport-launches-theta-ethereum-bridge-on-theta-testnet-with-mainnet-integration-to-c398349e96e6"
+                                                    target="_blank" class="news-item">
+                                                    <div class="news-item__date">Oct 07, 2021</div>
+                                                    <div class="news-item__title">First Theta / Ethereum bridge launches
+                                                        on Theta Testnet, with Mainnet integration to follow soon</div>
+                                                    <div class="news-item__source"></div>
+                                                </a>
+                                                <a href="https://www.thetavideoapi.com/" target="_blank"
+                                                    class="news-item">
+                                                    <div class="news-item__date">Oct 01, 2021</div>
+                                                    <div class="news-item__title">New Theta Video API Service Gives
+                                                        Developers Power to Bring Web 3.0 Decentralized Video to Any
+                                                        Application</div>
+                                                    <div class="news-item__source">Theta Video API</div>
+                                                </a>
+                                                <a href="https://twitter.com/DecentralGames/status/1440712339150368775?s=20"
+                                                    target="_blank" class="news-item">
+                                                    <div class="news-item__date">Sep 22, 2021</div>
+                                                    <div class="news-item__title">Theta partners with Decentral Games to
+                                                        scale livestream capacity during metaverse events</div>
+                                                    <div class="news-item__source"></div>
+                                                </a>
+                                                <a href="https://www.onefc.com/press-releases/one-championship-announces-global-partnership-with-theta-network-to-launch-nft-marketplace/"
+                                                    target="_blank" class="news-item">
+                                                    <div class="news-item__date">Aug 13, 2021</div>
+                                                    <div class="news-item__title">ONE Championship Announces Global
+                                                        Partnership With Theta Network To Launch NFT Marketplace</div>
+                                                    <div class="news-item__source">ONE Championship</div>
+                                                </a>
+                                                <a href="https://medium.com/theta-network/theta-blockhain-now-accessible-through-metamask-plug-in-61b278633264"
+                                                    target="_blank" class="news-item">
+                                                    <div class="news-item__date">Aug 04, 2021</div>
+                                                    <div class="news-item__title">Theta blockhain now accessible through
+                                                        Metamask plug-in</div>
+                                                    <div class="news-item__source">Medium</div>
+                                                </a>
+                                                <a href="https://github.com/thetatoken/theta-rosetta-rpc-adaptor"
+                                                    target="_blank" class="news-item">
+                                                    <div class="news-item__date">Jul 15, 2021</div>
+                                                    <div class="news-item__title">Theta Implementation of the Rosetta
+                                                        RPC API standard now public on Theta GitHub</div>
+                                                    <div class="news-item__source">GitHub</div>
+                                                </a>
+                                                <a href="https://medium.com/theta-network/theta-awarded-patent-application-approval-for-uspto-number-17-224-109-theta-1005-preventing-27e484be69c6"
+                                                    target="_blank" class="news-item">
+                                                    <div class="news-item__date">Jul 07, 2021</div>
+                                                    <div class="news-item__title">Theta awarded patent application
+                                                        approval 17/224,109 — Preventing denial-of-service attacks in
+                                                        decentralized edge networks</div>
+                                                    <div class="news-item__source"></div>
+                                                </a><a
+                                                    href="https://medium.com/theta-network/theta-mainnet-3-0-e0a4645a3e61"
+                                                    target="_blank" class="news-item">
+                                                    <div class="news-item__date">Jun 30, 2021</div>
+                                                    <div class="news-item__title">Theta Mainnet 3.0 released today with
+                                                        major protocol updates and TFuel staking</div>
+                                                    <div class="news-item__source">Medium</div>
+                                                </a><a
+                                                    href="https://medium.com/theta-network/theta-wallet-v3-0-1-released-to-enable-tfuel-staking-at-block-height-10-968-061-on-june-30-c90bf080ef93"
+                                                    target="_blank" class="news-item">
+                                                    <div class="news-item__date">Jun 29, 2021</div>
+                                                    <div class="news-item__title">Theta Wallet v3.0.1 released to enable
+                                                        TFuel staking at block height 10,968,061 on June 30</div>
+                                                    <div class="news-item__source">Medium</div>
+                                                </a><a href="https://medium.com/theta-network/theta-awarded-patent-application-approval-for-uspto-17-218-245-theta-1003-decentralized-drm-9f41c4459b83"
+                                                    target="_blank" class="news-item">
+                                                    <div class="news-item__date">Jun 23, 2021</div>
+                                                    <div class="news-item__title">Theta awarded patent application
+                                                        approval for USPTO №17/218,245 (“THETA-1003”) — decentralized
+                                                        DRM via NFTs</div>
+                                                    <div class="news-item__source">Medium</div>
+                                                </a></div><a class="in-the-news-section__load-more">Show More</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="section-spacer"></div>
+                        <div id="problem-section" class="problem-section">
+                            <div class="problem-section__wrapper">
+                                <div data-text="The Problem" class="problem-section__title">The Problem</div>
+                                <div class="problem-section__content">
+                                    <div class="problem-section__col1"><img src="/logo_files/the-problem-en@2x.png"
+                                            class="problem-section__diagram"></div>
+                                    <div class="problem-section__col2">
+                                        <div class="th-ordered-list">
+                                            <div class="th-ordered-list__title">
+                                                <div>
+                                                    <div>Live video streaming of today</div>
+                                                </div>
+                                            </div>
+                                            <div class="th-ordered-list__items">
+                                                <div class="th-ordered-list__item">
+                                                    <div class="th-ordered-list__item__number">1</div>
+                                                    <div class="th-ordered-list__item__title-and-description">
+                                                        <div class="th-ordered-list__item__title">Poor Quality</div>
+                                                        <div class="th-ordered-list__item__description">Today's content
+                                                            delivery networks (CDN) lack reach, causing video
+                                                            re-buffering, and high load times in many parts of the
+                                                            world.</div>
+                                                    </div>
+                                                </div>
+                                                <div class="th-ordered-list__item">
+                                                    <div class="th-ordered-list__item__number">2</div>
+                                                    <div class="th-ordered-list__item__title-and-description">
+                                                        <div class="th-ordered-list__item__title">Sky rocketing data
+                                                            needs</div>
+                                                        <div class="th-ordered-list__item__description">Users demand 4k,
+                                                            8k, and higher quality streams create infrastructure
+                                                            bottleneck.</div>
+                                                    </div>
+                                                </div>
+                                                <div class="th-ordered-list__item">
+                                                    <div class="th-ordered-list__item__number">3</div>
+                                                    <div class="th-ordered-list__item__title-and-description">
+                                                        <div class="th-ordered-list__item__title">Centralized and
+                                                            inefficient system</div>
+                                                        <div class="th-ordered-list__item__description">The centralized
+                                                            nature means less revenue flows back to content creators and
+                                                            platforms.</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="th-ordered-list__footer">Viewers get low-quality streams and few
+                                                rewards today. Centralized CDNs reap most of the rewards.</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="section-spacer"></div>
+                        <div id="solution-section" class="solution-section">
+                            <div class="solution-section__wrapper">
+                                <div data-text="The Solution" class="solution-section__title">The Solution</div>
+                                <div class="solution-section__content">
+                                    <div class="solution-section__col1">
+                                        <img src="/logo_files/the-solution-en-2021@2x.png"
+                                            class="solution-section__diagram"></div>
+                                    <div class="solution-section__col2">
+                                        <div class="th-ordered-list">
+                                            <div class="th-ordered-list__title solution-section__points-title">
+                                                Decentralized peer-to-peer video delivery. A new native blockchain.
+                                                Powered by users.</div>
+                                            <div class="th-ordered-list__items">
+                                                <div class="th-ordered-list__item">
+                                                    <div class="th-ordered-list__item__number">1</div>
+                                                    <div class="th-ordered-list__item__title-and-description">
+                                                        <div class="th-ordered-list__item__title">Viewers earn rewards
+                                                            as Theta Fuel</div>
+                                                        <div class="th-ordered-list__item__description">For sharing
+                                                            excess bandwidth and resources, viewers are now rewarded to
+                                                            participate in the network.</div>
+                                                    </div>
+                                                </div>
+                                                <div class="th-ordered-list__item">
+                                                    <div class="th-ordered-list__item__number">2</div>
+                                                    <div class="th-ordered-list__item__title-and-description">
+                                                        <div class="th-ordered-list__item__title">Higher quality,
+                                                            smoother video streaming</div>
+                                                        <div class="th-ordered-list__item__description">A decentralized
+                                                            peer-to-peer network delivers streams efficiently globally.
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="th-ordered-list__item">
+                                                    <div class="th-ordered-list__item__number">3</div>
+                                                    <div class="th-ordered-list__item__title-and-description">
+                                                        <div class="th-ordered-list__item__title">Reduced cost of
+                                                            delivering video streams</div>
+                                                        <div class="th-ordered-list__item__description">Video platforms
+                                                            no longer need to build expensive infrastructure, means more
+                                                            innovation and unique business models.</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="th-ordered-list__footer">In the end, users benefit by sharing
+                                                their bandwidth and building a community. Content creators and platforms
+                                                all earn more with lower streaming costs.</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="section-spacer"></div>
+                        <div id="open-source-platform-section" class="open-source-platform-section">
+                            <div class="open-source-platform-section__wrapper">
+                                <div data-text="Open Source Platform" class="open-source-platform-section__title">Open
+                                    Source Platform</div>
+                                <div class="open-source-platform-section__content">
+                                    <div class="open-source-platform-section__col1"><img
+                                            src="/logo_files/open-source-platform-en-2021@2x.png"
+                                            class="open-source-platform-section__diagram"></div>
+                                    <div class="open-source-platform-section__col2">
+                                        <div class="th-ordered-list">
+                                            <div class="th-ordered-list__items">
+                                                <div class="th-ordered-list__item">
+                                                    <div class="th-ordered-list__item__number">1</div>
+                                                    <div class="th-ordered-list__item__title-and-description">
+                                                        <div class="th-ordered-list__item__title">Open-source network
+                                                            &amp; protocol</div>
+                                                        <div class="th-ordered-list__item__description">Open to all
+                                                            developers and partners to build on the Theta network.</div>
+                                                    </div>
+                                                </div>
+                                                <div class="th-ordered-list__item">
+                                                    <div class="th-ordered-list__item__number">2</div>
+                                                    <div class="th-ordered-list__item__title-and-description">
+                                                        <div class="th-ordered-list__item__title">Decentralized Apps
+                                                            (Dapps)</div>
+                                                        <div class="th-ordered-list__item__description">Video platforms
+                                                            and content providers can build specialized Dapps for their
+                                                            audience.</div>
+                                                    </div>
+                                                </div>
+                                                <div class="th-ordered-list__item">
+                                                    <div class="th-ordered-list__item__number">3</div>
+                                                    <div class="th-ordered-list__item__title-and-description">
+                                                        <div class="th-ordered-list__item__title">Multiple content
+                                                            verticals</div>
+                                                        <div class="th-ordered-list__item__description">From esports,
+                                                            music, TV and movies to distance learning and peer to peer
+                                                            live streaming. Power the next generation entertainment.
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="section-spacer"></div>
+                        <div id="documentation-section" class="documentation-section">
+                            <div class="documentation-section__wrapper">
+                                <div data-text="Documentation" class="documentation-section__title">Documentation</div>
+                                <div class="documentation-section__content"><a
+                                        href="https://s3.us-east-2.amazonaws.com/assets.thetatoken.org/Theta-Ecosystem-2022-and-TDROP-Whitepaper.pdf?v=1634767354.646"
+                                        target="_blank"
+                                        class="th-button th-button--large th-button--bg-gradient documentation-section__download-whitepaper-button">Download
+                                        TDROP Whitepaper</a>
+                                    <div class="documentation-section__buttons">
+                                        <a href="https://github.com/thetatoken"
+                                            target="_blank"
+                                            class="th-button th-button--dashed-border th-button--medium th-button--green documentation-section__view-faq-button">GitHub</a>
+                                            <a href="https://github.com/thetatoken/theta-protocol-ledger/blob/master/docs/multi-level-bft-tech-report.pdf"
+                                            target="_blank"
+                                            class="th-button th-button--dashed-border th-button--medium th-button--green documentation-section__view-faq-button">Multi-BFT
+                                            Paper</a>
+                                            <a href="https://s3.us-east-2.amazonaws.com/assets.thetatoken.org/Theta-white-paper-latest.pdf"
+                                            target="_blank"
+                                            class="th-button th-button--dashed-border th-button--medium th-button--green documentation-section__view-faq-button">2.0
+                                            Whitepaper</a><a
+                                            href="https://s3.us-east-2.amazonaws.com/assets.thetatoken.org/Theta-white-paper-3-0-latest.pdf?v=1634767354.646"
+                                            target="_blank"
+                                            class="th-button th-button--dashed-border th-button--medium th-button--green documentation-section__view-faq-button">3.0
+                                            Whitepaper</a>
+                                        </div>
+                                        <img src="/logo_files/whitepaper.png"
+                                        class="documentation-section__whitepaper-book">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="section-spacer"></div>
+                        <div id="innovations-section" class="innovations-section">
+                            <div class="innovations-section__wrapper">
+                                <div data-text="Innovations" class="innovations-section__title">Innovations</div>
+                                <div class="innovations-section__content">
+                                    <div class="innovations-section__row">
+                                        <div class="innovations-section__row__title">Technical Advancements</div>
+                                        <div class="innovations-section__row__items">
+                                            <div class="innovations-section__row__item"><img
+                                                    src="/logo_files/innovations1@2x.png"
+                                                    class="innovations-section__row__item__icon">
+                                                <div class="innovations-section__row__item__description">A new, native
+                                                    blockchain purpose-built to power decentralized video delivery.
+                                                </div>
+                                            </div>
+                                            <div class="innovations-section__row__item">
+                                                <img src="/logo_files/innovations2@2x.png"
+                                                    class="innovations-section__row__item__icon">
+                                                <div class="innovations-section__row__item__description">Ground breaking
+                                                    technology include Multi-BFT Consensus, Aggregated Signature Gossip
+                                                    Scheme, and Resource-Oriented Micropayment Pool.</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="innovations-section__row">
+                                        <div class="innovations-section__row__title">Streaming Ecosystem</div>
+                                        <div class="innovations-section__row__items">
+                                            <div class="innovations-section__row__item"><img
+                                                    src="/logo_files/innovations3@2x.png"
+                                                    class="innovations-section__row__item__icon">
+                                                <div class="innovations-section__row__item__description">Theta works as
+                                                    a long-term sustainable incentive mechanism to motivate all
+                                                    stakeholders to participate in video delivery, fully decentralized.
+                                                </div>
+                                            </div>
+                                            <div class="innovations-section__row__item"><img
+                                                    src="/logo_files/innovations4@2x.png"
+                                                    class="innovations-section__row__item__icon">
+                                                <div class="innovations-section__row__item__description">Theta is the
+                                                    only end-to-end platform. New blockchain. Next generation
+                                                    peer-to-peer architecture.</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="section-spacer"></div>
+                        <div id="team-section" class="team-section">
+                            <div class="team-section__wrapper">
+                                <div data-text="Leadership" class="team-section__title">Leadership</div>
+                                <div class="team-section__content">
+                                    <div class="team-section__members leadership">
+                                        <div class="team-section__member"><img src="/logo_files/mitch_small@2x.png"
+                                                class="team-section__member__avatar">
+                                            <div class="team-section__member__name">Mitch Liu</div>
+                                            <div class="team-section__member__title">Cofounder / CEO</div>
+                                            <div class="team-section__member__bio">
+                                                <ul>
+                                                    <li>Cofounder THETA.tv</li>
+                                                    <li>Cofounder Gameview Studios</li>
+                                                    <li>Cofounder Tapjoy</li>
+                                                    <li>BS in Computer Science &amp; Engineering from MIT</li>
+                                                    <li>MBA from Stanford Graduate School of Business</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="team-section__member"><img src="/logo_files/jieyi_small@2x.png"
+                                                class="team-section__member__avatar">
+                                            <div class="team-section__member__name">Jieyi Long</div>
+                                            <div class="team-section__member__title">Cofounder / CTO</div>
+                                            <div class="team-section__member__bio">
+                                                <ul>
+                                                    <li>Cofounder THETA.tv</li>
+                                                    <li>BS in Microelectronics, Peking University</li>
+                                                    <li>PhD in Computer Engineering, Northwestern University</li>
+                                                    <li>Developed multiple patented technologies including VR live
+                                                        streaming as well as instant replays for video games.</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div data-text="Blockchain Team" class="team-section__title">Blockchain Team</div>
+                                <div class="team-section__content">
+                                    <div class="team-section__members">
+                                        <div class="team-section__member"><img src="/logo_files/jieyi_small@2x.png"
+                                                class="team-section__member__avatar">
+                                            <div class="team-section__member__name">Jieyi Long</div>
+                                            <div class="team-section__member__title">Cofounder / CTO</div>
+                                        </div>
+                                        <div class="team-section__member"><img src="/logo_files/wei@2x.png"
+                                                class="team-section__member__avatar">
+                                            <div class="team-section__member__name">Ribao Wei</div>
+                                            <div class="team-section__member__title">Principal Engineer</div>
+                                        </div>
+                                        <div class="team-section__member"><img src="/logo_files/qinwei@2x.png"
+                                                class="team-section__member__avatar">
+                                            <div class="team-section__member__name">Qinwei Gong</div>
+                                            <div class="team-section__member__title">Platform Architect</div>
+                                        </div>
+                                        <div class="team-section__member"><img src="/logo_files/jing@2x.png"
+                                                class="team-section__member__avatar">
+                                            <div class="team-section__member__name">Jing Xu</div>
+                                            <div class="team-section__member__title">Blockchain Engineer</div>
+                                        </div>
+                                        <div class="team-section__member"><img src="/logo_files/zhenyang@2x.png"
+                                                class="team-section__member__avatar">
+                                            <div class="team-section__member__name">zhenyang Tang</div>
+                                            <div class="team-section__member__title">Blockchain Engineer</div>
+                                        </div>
+                                        <div class="team-section__member"><img src="/logo_files/antoine@2x.png"
+                                                class="team-section__member__avatar">
+                                            <div class="team-section__member__name">Antoine Riviere</div>
+                                            <div class="team-section__member__title">Platform Engineer</div>
+                                        </div>
+                                        <div class="team-section__member"><img src="/logo_files/rene@2x.png"
+                                                class="team-section__member__avatar">
+                                            <div class="team-section__member__name">Rene Garcia</div>
+                                            <div class="team-section__member__title">Platform Engineer</div>
+                                        </div>
+                                        <div class="team-section__member"><img src="/logo_files/owen@2x.png"
+                                                class="team-section__member__avatar">
+                                            <div class="team-section__member__name">Owen Ching</div>
+                                            <div class="team-section__member__title">Head of Cloud Operations</div>
+                                        </div>
+                                        <div class="team-section__member"><img src="/logo_files/wes@2x.png"
+                                                class="team-section__member__avatar">
+                                            <div class="team-section__member__name">Wes Levitt</div>
+                                            <div class="team-section__member__title">Head of Strategy</div>
+                                        </div>
+                                        <div class="team-section__member"><img src="/logo_files/bruce@2x.png"
+                                                class="team-section__member__avatar">
+                                            <div class="team-section__member__name">Bruce Chong</div>
+                                            <div class="team-section__member__title">Head of Asia Development</div>
+                                        </div>
+                                        <div class="team-section__member"><img src="/logo_files/jayson@2x.png"
+                                                class="team-section__member__avatar">
+                                            <div class="team-section__member__name">Jayson Casaclang</div>
+                                            <div class="team-section__member__title">QA Scalability Engineer</div>
+                                        </div>
+                                        <div class="team-section__member"><img src="logo_files/jayne-kim@2x.png"
+                                                class="team-section__member__avatar">
+                                            <div class="team-section__member__name">Jayne Kim</div>
+                                            <div class="team-section__member__title">General Manager - Asia</div>
+                                        </div>
+                                        <div class="team-section__member"><img src="/logo_files/jerry@2x.png"
+                                                class="team-section__member__avatar">
+                                            <div class="team-section__member__name">Jerry Kowal</div>
+                                            <div class="team-section__member__title">Head of Content</div>
+                                        </div>
+                                        <div class="team-section__member"><img src="/logo_files/team_susanna@2x.png"
+                                                class="team-section__member__avatar">
+                                            <div class="team-section__member__name">Susanna Tam</div>
+                                            <div class="team-section__member__title">Office Manager</div>
+                                        </div>
+                                        <div class="team-section__member"><img src="/logo_files/team_esen@2x.png"
+                                                class="team-section__member__avatar">
+                                            <div class="team-section__member__name">Esen Aliev</div>
+                                            <div class="team-section__member__title">Quality Assurance Engineer</div>
+                                        </div>
+                                        <div class="team-section__member"><img src="/logo_files/team_matt@2x.png"
+                                                class="team-section__member__avatar">
+                                            <div class="team-section__member__name">Matt White</div>
+                                            <div class="team-section__member__title">Project Manager</div>
+                                        </div>
+                                        <div class="team-section__member"><img src="/logo_files/kyle@2x.png"
+                                                class="team-section__member__avatar">
+                                            <div class="team-section__member__name">Kyle Laffey</div>
+                                            <div class="team-section__member__title">Head of Partnerships</div>
+                                        </div>
+                                        <div class="team-section__member"><img src="/logo_files/team_josh@2x.png"
+                                                class="team-section__member__avatar">
+                                            <div class="team-section__member__name">Josh Cruz</div>
+                                            <div class="team-section__member__title">Community Manager</div>
+                                        </div>
+                                        <div class="team-section__member"><img src="/logo_files/team_judy@2x.png"
+                                                class="team-section__member__avatar">
+                                            <div class="team-section__member__name">Judy Cen</div>
+                                            <div class="team-section__member__title">Accounting Manager</div>
+                                        </div>
+                                        <div class="team-section__member"><img src="/logo_files/team_amber@2x.png"
+                                                class="team-section__member__avatar">
+                                            <div class="team-section__member__name">Amber Yoon</div>
+                                            <div class="team-section__member__title">Visual Designer</div>
+                                        </div>
+                                        <div class="team-section__member"><img src="/logo_files/team_tyler@2x.png"
+                                                class="team-section__member__avatar">
+                                            <div class="team-section__member__name">Tyler Vo</div>
+                                            <div class="team-section__member__title">Customer Support Lead</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="section-spacer"></div>
+                        <div id="investors-section" class="investors-section">
+                            <div class="investors-section__wrapper">
+                                <div data-text="THETA Investors" class="investors-section__title">THETA Investors</div>
+                                <div class="investors-section__content">
+                                    <div class="partners-section__partners">
+                                        <div class="partners-section__partners-row">
+                                            <div class="partners-section__partners-logo-wrapper"><img
+                                                    src="/logo_files/inv_dhvc.png"
+                                                    class="partners-section__partners-logo"></div>
+                                            <div class="partners-section__partners-logo-wrapper"><img
+                                                    src="/logo_files/inv_sierra.png"
+                                                    class="partners-section__partners-logo"></div>
+                                            <div class="partners-section__partners-logo-wrapper"><img
+                                                    src="/logo_files/inv_dcm.png"
+                                                    class="partners-section__partners-logo"></div>
+                                            <div class="partners-section__partners-logo-wrapper"><img
+                                                    src="/logo_files/inv_venture.png"
+                                                    class="partners-section__partners-logo"></div>
+                                            <div class="partners-section__partners-logo-wrapper"><img
+                                                    src="/logo_files/inv_colopl.png"
+                                                    class="partners-section__partners-logo"></div>
+                                            <div class="partners-section__partners-logo-wrapper"><img
+                                                    src="/logo_files/inv_gree.png"
+                                                    class="partners-section__partners-logo"></div>
+                                            <div class="partners-section__partners-logo-wrapper"><img
+                                                    src="/logo_files/inv_greenpine.png"
+                                                    class="partners-section__partners-logo"></div>
+                                            <div class="partners-section__partners-logo-wrapper"><img
+                                                    src="/logo_files/inv_sparkland.png"
+                                                    class="partners-section__partners-logo"></div>
+                                            <div class="partners-section__partners-logo-wrapper"><img
+                                                    src="/logo_files/inv_zp_capital.png"
+                                                    class="partners-section__partners-logo"></div>
+                                            <div class="partners-section__partners-logo-wrapper"><img
+                                                    src="/logo_files/inv_advancit.png"
+                                                    class="partners-section__partners-logo"></div>
+                                            <div class="partners-section__partners-logo-wrapper"><img
+                                                    src="/assets/logos/investors/inv_caa.png"
+                                                    class="partners-section__partners-logo"></div>
+                                            <div class="partners-section__partners-logo-wrapper"><img
+                                                    src="/logo_files/inv_greycroft.png"
+                                                    class="partners-section__partners-logo"></div>
+                                            <div class="partners-section__partners-logo-wrapper"><img
+                                                    src="/logo_files/inv_bdmi.png"
+                                                    class="partners-section__partners-logo"></div>
+                                            <div class="partners-section__partners-logo-wrapper"><img
+                                                    src="/logo_files/inv_heuristic.png"
+                                                    class="partners-section__partners-logo"></div>
+                                            <div class="partners-section__partners-logo-wrapper"><img
+                                                    src="/logo_files/inv_sony.png"
+                                                    class="partners-section__partners-logo"></div>
+                                            <div class="partners-section__partners-logo-wrapper"><img
+                                                    src="/logo_files/inv_samsung.png"
+                                                    class="partners-section__partners-logo"></div>
+                                            <div class="partners-section__partners-logo-wrapper"><img
+                                                    src="/logo_files/inv_gumi.png"
+                                                    class="partners-section__partners-logo"></div>
+                                            <div class="partners-section__partners-logo-wrapper"><img
+                                                    src="/logo_files/inv_ibc-new.png"
+                                                    class="partners-section__partners-logo"></div>
+                                            <div class="partners-section__partners-logo-wrapper"><img
+                                                    src="/logo_files/inv_nirvana.png"
+                                                    class="partners-section__partners-logo"></div>
+                                            <div class="partners-section__partners-logo-wrapper"><img
+                                                    src="/logo_files/inv_seraph.png"
+                                                    class="partners-section__partners-logo"></div>
+                                            <div class="partners-section__partners-logo-wrapper"><img
+                                                    src="logo_files/inv_zmt.png"
+                                                    class="partners-section__partners-logo"></div>
+                                            <div class="partners-section__partners-logo-wrapper"><img
+                                                    src="/logo_files/inv_synapse.png"
+                                                    class="partners-section__partners-logo"></div>
+                                            <div class="partners-section__partners-logo-wrapper"><img
+                                                    src="/logo_files/inv_aelf.png"
+                                                    class="partners-section__partners-logo"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="section-spacer"></div>
+                        <div id="advisors-section" class="investors-section">
+                            <div class="investors-section__wrapper">
+                                <div>
+                                    <div data-text="Media Advisors" class="investors-section__title">Media Advisors
+                                    </div>
+                                    <div class="investors-section__content">
+                                        <div class="investors-section__advisors-columns">
+                                            <div class="investors-section__advisors-column">
+                                                <div class="investors-section__advisor"><img
+                                                        src="/logo_files/steve-chen@2x.png"
+                                                        class="investors-section__advisor__avatar">
+                                                    <div class="investors-section__advisor__info">
+                                                        <div class="investors-section__advisor__name">Steve Chen</div>
+                                                        <div class="investors-section__advisor__title">Co-founder of
+                                                            YouTube</div>
+                                                        <div class="investors-section__advisor__bio">Steve Chen was the
+                                                            co-founder and chief technology officer of YouTube. Steve
+                                                            was instrumental in building YouTube into a viral video
+                                                            phenomenon. He helped lead YouTube through the Google
+                                                            acquisition for $1.65 billion, less than a year after
+                                                            launching the site. As the key technologist, Steve developed
+                                                            the company’s massive data centers and helped build YouTube
+                                                            into a premier entertainment destination, and one of the
+                                                            most popular websites on the Internet today.</div>
+                                                        <div class="investors-section__advisor__logos"><img
+                                                                src="/logo_files/youtube@2x.png"></div>
+                                                    </div>
+                                                </div>
+                                                <div class="investors-section__advisor"><img
+                                                        src="/logo_files/cliff-morgan@2x.png"
+                                                        class="investors-section__advisor__avatar">
+                                                    <div class="investors-section__advisor__info">
+                                                        <div class="investors-section__advisor__name">Clifford Morgan
+                                                        </div>
+                                                        <div class="investors-section__advisor__title">CEO GFUEL</div>
+                                                        <div class="investors-section__advisor__bio">Cliff Morgan is the
+                                                            Founder and CEO of Gamma Labs, maker and marketer of GFUEL
+                                                            energy drink. Originally a Sports Nutrition company, Gamma
+                                                            transitioned to a direct-to-consumer e-commerce business
+                                                            through the early adoption of influencer marketing. GFUEL
+                                                            currently maintains over 200 active influencer
+                                                            relationships, with a combined reach of over 70 million
+                                                            people a month across all social media platforms. Gamma Labs
+                                                            has been recognized as one of the fastest growing companies
+                                                            in the United States for two consecutive years by the Inc.
+                                                            5000 (2016 #416, 2017 #636).</div>
+                                                        <div class="investors-section__advisor__logos"><img
+                                                                src="/logo_files/gfuel@2x.png"></div>
+                                                    </div>
+                                                </div>
+                                                <div class="investors-section__advisor"><img
+                                                        src="/logo_files/justin-kan@2x.png"
+                                                        class="investors-section__advisor__avatar">
+                                                    <div class="investors-section__advisor__info">
+                                                        <div class="investors-section__advisor__name">Justin Kan</div>
+                                                        <div class="investors-section__advisor__title">Co-founder of
+                                                            Twitch</div>
+                                                        <div class="investors-section__advisor__bio">Justin Kan is a
+                                                            serial entrepreneur and investor. He is widely known for
+                                                            founding Twitch, a video game streaming platform acquired
+                                                            for $970mm by Amazon in 2014. Justin has founded various
+                                                            companies including Kiko, the first AJAX web calendar;
+                                                            Justin.TV, a live video streaming platform; Socialcam, a
+                                                            mobile video sharing app (Acquired for $60mm by Autodesk in
+                                                            2012); and Exec, an on-demand home cleaning service
+                                                            (acquired by Handybook in 2014). He has additionally
+                                                            incubated two companies out of his home in the past 2 years:
+                                                            Alto (Formerly ScriptDash), a modern online pharmacy, and
+                                                            Whale, a video Q&amp;A app. Justin impacted over 900
+                                                            companies as a Partner at Y Combinator from 2011-2017 and
+                                                            personally invested in over 65 companies, including Cruise,
+                                                            Zenefits, and Wave. Currently, he is the Founder and CEO of
+                                                            Atrium LTS, building technology to revolutionize the legal
+                                                            industry. Justin graduated from Yale University with a
+                                                            degree in Physics and Philosophy.</div>
+                                                        <div class="investors-section__advisor__logos"><img
+                                                                src="/logo_files/twitch@2x.png"></div>
+                                                    </div>
+                                                </div>
+                                                <div class="investors-section__advisor"><img
+                                                        src="/logo_files/kyle-okamoto@2x.png"
+                                                        class="investors-section__advisor__avatar">
+                                                    <div class="investors-section__advisor__info">
+                                                        <div class="investors-section__advisor__name">Kyle Okamoto</div>
+                                                        <div class="investors-section__advisor__title">Chief Network
+                                                            Officer at Verizon Digital Media</div>
+                                                        <div class="investors-section__advisor__bio">Kyle Okamoto is the
+                                                            Chief Network Officer at Verizon Digital Media Services,
+                                                            overseeing the Network, Technology and Operations businesses
+                                                            and one of the original employees of the VDMS startup. Kyle
+                                                            has worked for Verizon for many years in a number of
+                                                            leadership roles as well as at several start-ups in the
+                                                            social enterprise and digital media space. He’s been
+                                                            instrumental in the AOL and Yahoo integration as well as the
+                                                            EdgeCast Networks, UpLynk and Volicon acquisitions that
+                                                            currently form the foundation of Verizon Digital Media
+                                                            Services.</div>
+                                                        <div class="investors-section__advisor__logos"><img
+                                                                src="/logo_files/VDMS@2x.png"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="investors-section__advisors-column">
+                                                <div class="investors-section__advisor"><img
+                                                        src="/logo_files/dennis-fong@2x.png"
+                                                        class="investors-section__advisor__avatar">
+                                                    <div class="investors-section__advisor__info">
+                                                        <div class="investors-section__advisor__name">Dennis Fong</div>
+                                                        <div class="investors-section__advisor__title">Founder Plays.tv,
+                                                            first esports celebrity</div>
+                                                        <div class="investors-section__advisor__bio">Dennis Fong is the
+                                                            Founder &amp; CEO of Plays.tv, a video platform that helps
+                                                            gamers level up their play. Known as "Thresh" in gaming
+                                                            circles, Dennis was crowned world champion of Doom, Quake,
+                                                            and Quake 2, was called the "Michael Jordan of video games"
+                                                            by the Wall Street Journal, and inducted into the eSports
+                                                            Hall of Fame. Dennis is also the co-founder of several
+                                                            successful startups, including Xfire (acquired by Viacom),
+                                                            Lithium Technologies (acquired by Vista Partners),
+                                                            Gamers.com and Raptr.</div>
+                                                        <div class="investors-section__advisor__logos"><img
+                                                                src="/logo_files/playstv@2x.png"></div>
+                                                    </div>
+                                                </div>
+                                                <div class="investors-section__advisor"><img
+                                                        src="/logo_files/sam-wick@2x.png"
+                                                        class="investors-section__advisor__avatar">
+                                                    <div class="investors-section__advisor__info">
+                                                        <div class="investors-section__advisor__name">Sam Wick</div>
+                                                        <div class="investors-section__advisor__title">Head of Ventures,
+                                                            United Talent Agency</div>
+                                                        <div class="investors-section__advisor__bio">Sam Wick is a
+                                                            leading digital and entertainment executive. He currently
+                                                            leads UTA’s new venture group. He most recently was a key
+                                                            member of Maker Studios’ management team where he was
+                                                            responsible for the enterprise P&amp;L, corporate
+                                                            development, business development and strategic
+                                                            partnerships. He has 20+ years of experience in the media
+                                                            and technology space including senior positions at MySpace,
+                                                            AOL, Mp3.com and Sony. During this time he was involved in
+                                                            M&amp;A activity including financing and acquisitions of his
+                                                            companies.</div>
+                                                        <div class="investors-section__advisor__logos"><img
+                                                                src="/logo_files/uta@2x.png"><img
+                                                                src="/logo_files/sony@2x.png"></div>
+                                                    </div>
+                                                </div>
+                                                <div class="investors-section__advisor"><img
+                                                        src="/logo_files/karen-huh@2x.png"
+                                                        class="investors-section__advisor__avatar">
+                                                    <div class="investors-section__advisor__info">
+                                                        <div class="investors-section__advisor__name">Karen Huh</div>
+                                                        <div class="investors-section__advisor__title">Senior Vice
+                                                            President of CJ Hello</div>
+                                                        <div class="investors-section__advisor__bio">Karen is Senior
+                                                            Vice President of CJ Hello and leads their internet
+                                                            streaming media services business including online offerings
+                                                            of top Korean networks, movies, sports, animations and apps.
+
+                                                            Prior to joining CJ Hello, Karen was founder and CEO of
+                                                            Across, a strategy consulting and executive advisory company
+                                                            in the media &amp; technology space. Before founding Across,
+                                                            she gained significant experience in the media space at
+                                                            Google, where she served as Sr. Business Development Manager
+                                                            of YouTube Korea and headed TV/movie/news &amp; sports
+                                                            content partnerships, and Naver, where she oversaw digital
+                                                            content business, strategic partnerships and content
+                                                            acquisitions. Karen began her career at LG Uplus, where she
+                                                            managed the online content business and launched LG’s paid
+                                                            Video-on-Demand service for the first time in Korea.</div>
+                                                        <div class="investors-section__advisor__logos"><img
+                                                                src="/logo_files/cj-hello_white.png">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="investors-section__advisor"><img
+                                                        src="/logo_files/jonathan-wong@2x.png"
+                                                        class="investors-section__advisor__avatar">
+                                                    <div class="investors-section__advisor__info">
+                                                        <div class="investors-section__advisor__name">Jonathan Wong
+                                                        </div>
+                                                        <div class="investors-section__advisor__title">Director of
+                                                            Product at Rakuten Viki</div>
+                                                        <div class="investors-section__advisor__bio">Jonathan is
+                                                            Director of Product at Rakuten Viki, where he drives the
+                                                            overall product vision and strategy, and leads a team of
+                                                            product managers in building Viki's apps on web, mobile and
+                                                            TV platforms. Previously, Jonathan was at Microsoft leading
+                                                            the Bing Ads business across Southeast Asia, India and
+                                                            Korea. Before that, he was the Head of Consumer Apps &amp;
+                                                            Services Marketing, responsible for overall brand strategy,
+                                                            marketing execution and driving user adoption of Microsoft
+                                                            apps and services.</div>
+                                                        <div
+                                                            class="investors-section__advisor__logos investors-section__advisor__logos--20">
+                                                            <img src="/logo_files/rakuten-viki@2x.png"><img
+                                                                src="/logo_files/microsoft@2x.png"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="section-spacer"></div>
+                                <div>
+                                    <div data-text="Blockchain Advisors" class="investors-section__title">Blockchain
+                                        Advisors</div>
+                                    <div class="investors-section__content">
+                                        <div class="investors-section__advisors-columns">
+                                            <div class="investors-section__advisors-column">
+                                                <div class="investors-section__advisor"><img
+                                                        src="/logo_files/dovey-wan@2x.png"
+                                                        class="investors-section__advisor__avatar">
+                                                    <div class="investors-section__advisor__info">
+                                                        <div class="investors-section__advisor__name">Dovey Wan</div>
+                                                        <div class="investors-section__advisor__title">Founding Partner
+                                                            of Primitive Ventures</div>
+                                                        <div class="investors-section__advisor__bio">Dovey Wan is
+                                                            Founding Partner of Primitive Ventures, a long-term focused
+                                                            cryptoasset investment fund she founded with Eric Meltzer.
+                                                            Prior to founding Primitive Ventures, Dovey served as
+                                                            Managing Director for DHVC (formerly Danhua Capital), where
+                                                            she participated in investments in marquee blockchain
+                                                            projects such as OmiseGo, Cosmos/Tendermint, and Kyber
+                                                            Network. Outside of blockchain ventures she also
+                                                            participated in investments in LimeBike, LoomAi, Chariot,
+                                                            and Flexport. She began her career at eBay, where she spent
+                                                            nearly 4 years progressing through Data Science Engineer,
+                                                            Senior Business Analyst, and Product Manager roles.</div>
+                                                        <div class="investors-section__advisor__logos"><img
+                                                                src="/logo_files/primitive@2x.png"></div>
+                                                    </div>
+                                                </div>
+                                                <div class="investors-section__advisor"><img
+                                                        src="/logo_files/fan-zhang@2x.png"
+                                                        class="investors-section__advisor__avatar">
+                                                    <div class="investors-section__advisor__info">
+                                                        <div class="investors-section__advisor__name">Fan Zhang</div>
+                                                        <div class="investors-section__advisor__title">Founding member,
+                                                            Sequoia Capital China</div>
+                                                        <div class="investors-section__advisor__bio">Fan Zhang is a
+                                                            pioneer in the venture capital industry in China. He
+                                                            previously served as a Founding Member of Sequoia Capital
+                                                            China, and a Director of DFJ ePlanet Ventures' China
+                                                            practice. Mr. Zhang has extensive experience investing into
+                                                            emerging technologies since 2001, and has been ranked
+                                                            multiple times by Forbes as one of leading venture
+                                                            capitalists in its annual China's Midas List.</div>
+                                                        <div class="investors-section__advisor__logos"><img
+                                                                src="//logo_files/sequoia@2x.png"></div>
+                                                    </div>
+                                                </div>
+                                                <div class="investors-section__advisor"><img
+                                                        src="/logo_files/riz-virk@2x.png"
+                                                        class="investors-section__advisor__avatar">
+                                                    <div class="investors-section__advisor__info">
+                                                        <div class="investors-section__advisor__name">Riz Virk</div>
+                                                        <div class="investors-section__advisor__title">Executive
+                                                            Director at Play Labs @ MIT</div>
+                                                        <div class="investors-section__advisor__bio">Riz Virk is
+                                                            Executive Director at Play Labs @ MIT, as well as Chief
+                                                            Strategy Officer and Cofounder at BitMovio, a video
+                                                            entertainment marketplace. He previously cofounded and/or
+                                                            was an early investor in THETA.tv, Theta Labs, GameView
+                                                            Studios, and Tapjoy. Riz was the founder of Bayview Films,
+                                                            and independent film studio. He holds a Masters in
+                                                            Management from Stanford Business School and a BS in
+                                                            Computer Science &amp; Engineering from MIT.</div>
+                                                        <div class="investors-section__advisor__logos"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="investors-section__advisors-column">
+                                                <div class="investors-section__advisor"><img
+                                                        src="/logo_files/travis-skweres@2x.png"
+                                                        class="investors-section__advisor__avatar">
+                                                    <div class="investors-section__advisor__info">
+                                                        <div class="investors-section__advisor__name">Travis Skweres
+                                                        </div>
+                                                        <div class="investors-section__advisor__title">Founder CoinMkt,
+                                                            one of the first US bitcoin exchanges</div>
+                                                        <div class="investors-section__advisor__bio">Travis Skweres is
+                                                            an early entrepreneur and investor player in
+                                                            cryptocurrencies. Travis was the CEO and Cofounder of
+                                                            CoinMKT, one of the first Bitcoin exchanges based in the
+                                                            United States. Operating from 2013 - 2015, CoinMKT achieved
+                                                            tens of thousands of users, millions of dollars worth of
+                                                            Bitcoin traded, and was acquired by ANX Hong Kong in 2015.
+                                                            Travis remains an active investor in the cryptocurrency
+                                                            community and is currently working on releasing his next
+                                                            cryptocurrency-related project. Travis clients have included
+                                                            Occidental Petroleum, The Home Depot, Blinds.com, NBC
+                                                            Universal, and more.</div>
+                                                        <div class="investors-section__advisor__logos"><img
+                                                                src="/logo_files/coinmkt@2x.png"><img
+                                                                src="/logo_files/cryptonaut@2x.png"></div>
+                                                    </div>
+                                                </div>
+                                                <div class="investors-section__advisor"><img
+                                                        src="/logo_files/ma-haobo@2x.png"
+                                                        class="investors-section__advisor__avatar">
+                                                    <div class="investors-section__advisor__info">
+                                                        <div class="investors-section__advisor__name">Ma Haobo</div>
+                                                        <div class="investors-section__advisor__title">CEO of aelf</div>
+                                                        <div class="investors-section__advisor__bio">Ma is the founder
+                                                            and CEO of aelf, a decentralized cloud computing blockchain
+                                                            network, as well as founder and CEO of Hoopox, a technology
+                                                            company that provides vertical industrial solutions from
+                                                            infrastructure to blockchain systems. A blockchain expert
+                                                            and early adopter of digital assets, Ma also previously
+                                                            served as CTO of GemPay and AllCoin. He is a member of
+                                                            Blockchain Experts’ Commission of Chinese Institute of
+                                                            Electronics.</div>
+                                                        <div class="investors-section__advisor__logos"><img
+                                                                src="/logo_files/aelf@2x.png"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="section-spacer"></div>
+                        <div id="video-platform-partners-section" class="partners-section">
+                            <div class="partners-section__wrapper">
+                                <div>
+                                    <div data-text="Partners" class="partners-section__title">Partners</div>
+                                    <div class="partners-section__content">
+                                        <div class="partners-section__partners">
+                                            <div class="partners-section__partners-row">
+                                                <div class="partners-section__partners-logo-wrapper"><img
+                                                        src="/logo_files/mgm@2x.png"
+                                                        class="partners-section__partners-logo"></div>
+                                                <div class="partners-section__partners-logo-wrapper"><img
+                                                        src="/logo_files/lionsgate@2x.png"
+                                                        class="partners-section__partners-logo"></div>
+                                                <div class="partners-section__partners-logo-wrapper"><img
+                                                        src="/logo_files/katy-perry@2x.png"
+                                                        class="partners-section__partners-logo"></div>
+                                                <div class="partners-section__partners-logo-wrapper"><img
+                                                        src="/logo_files/one-championship@2x.png"
+                                                        class="partners-section__partners-logo"></div>
+                                                <div class="partners-section__partners-logo-wrapper"><img
+                                                        src="/logo_files/nasa@2x.png"
+                                                        class="partners-section__partners-logo"></div>
+                                                <div class="partners-section__partners-logo-wrapper"><img
+                                                        src="/logo_files/failarmy@2x.png"
+                                                        class="partners-section__partners-logo"></div>
+                                                <div class="partners-section__partners-logo-wrapper"><img
+                                                        src="/logo_files/wpt@2x.png"
+                                                        class="partners-section__partners-logo"></div>
+                                                <div class="partners-section__partners-logo-wrapper"><img
+                                                        src="/logo_files/mystery-sci-theater@2x.png"
+                                                        class="partners-section__partners-logo"></div>
+                                                <div class="partners-section__partners-logo-wrapper"><img
+                                                        src="/logo_files/cinedigm@2x.png"
+                                                        class="partners-section__partners-logo"></div>
+                                                <div class="partners-section__partners-logo-wrapper"><img
+                                                        src="/logo_files/line@2x.png"
+                                                        class="partners-section__partners-logo"></div>
+                                                <div class="partners-section__partners-logo-wrapper"><img
+                                                        src="/logo_files/klaytn@2x.png"
+                                                        class="partners-section__partners-logo"></div>
+                                                <div class="partners-section__partners-logo-wrapper"><img
+                                                        src="/logo_files/chainlink@2x.png"
+                                                        class="partners-section__partners-logo"></div>
+                                                <div class="partners-section__partners-logo-wrapper"><img
+                                                        src="/logo_files/moviebloc@2x.png"
+                                                        class="partners-section__partners-logo"></div>
+                                                <div class="partners-section__partners-logo-wrapper"><img
+                                                        src="/logo_files/sizzle@2x.png"
+                                                        class="partners-section__partners-logo"></div>
+                                                <div class="partners-section__partners-logo-wrapper"><img
+                                                        src="/logo_files/ultra@2x.png"
+                                                        class="partners-section__partners-logo"></div>
+                                                <div class="partners-section__partners-logo-wrapper"><img
+                                                        src="/logo_files/contv@2x.png"
+                                                        class="partners-section__partners-logo"></div>
+                                                <div class="partners-section__partners-logo-wrapper"><img
+                                                        src="/logo_files/gfuel@2x.png"
+                                                        class="partners-section__partners-logo"></div>
+                                                <div class="partners-section__partners-logo-wrapper"><img
+                                                        src="/logo_files/pandoratv@2x.png"
+                                                        class="partners-section__partners-logo"></div>
+                                                <div class="partners-section__partners-logo-wrapper"><img
+                                                        src="/logo_files/gametalktalk@2x.png"
+                                                        class="partners-section__partners-logo"></div>
+                                                <div class="partners-section__partners-logo-wrapper"><img
+                                                        src="/logo_files/decentraland@2x.png"
+                                                        class="partners-section__partners-logo"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="section-spacer"></div>
+                        <div id="roadmap-section" class="roadmap-section">
+                            <div class="roadmap-section__wrapper">
+                                <div data-text="Roadmap" class="roadmap-section__title">Roadmap</div>
+                                <div class="roadmap-section__content">
+                                    <div class="roadmap-section__phases">
+                                        <div class="roadmap-section__phase is-phase1 is-open"><img
+                                                src="/logo_files/phase1@2x.png"
+                                                class="roadmap-section__phase__icon">
+                                            <div class="roadmap-section__phase__number is-phase1">2021 Q3</div>
+                                            <div class="roadmap-section__phase__name"></div>
+                                            <div class="roadmap-section__phase__key-dates">
+                                                <div class="roadmap-section__phase__key-date">
+                                                    <div class="roadmap-section__phase__key-date__description">Official
+                                                        Theta app for Ledger release</div>
+                                                </div>
+                                                <div class="roadmap-section__phase__key-date">
+                                                    <div class="roadmap-section__phase__key-date__description">ETH RPC
+                                                        adaptor with Truffle Suite, Remix, Hardhat, Metamask, Web3.js
+                                                        integration</div>
+                                                </div>
+                                                <div class="roadmap-section__phase__key-date">
+                                                    <div class="roadmap-section__phase__key-date__description">Theta
+                                                        Ecosystem and new TDROP token white paper</div>
+                                                </div>
+                                                <div class="roadmap-section__phase__key-date">
+                                                    <div class="roadmap-section__phase__key-date__description">Edge Node
+                                                        software support for Mac M1 chip</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="roadmap-section__phase is-phase2 is-open"><img
+                                                src="/logo_files/phase2@2x.png"
+                                                class="roadmap-section__phase__icon">
+                                            <div class="roadmap-section__phase__number is-phase2">2021 Q4</div>
+                                            <div class="roadmap-section__phase__name"></div>
+                                            <div class="roadmap-section__phase__key-dates">
+                                                <div class="roadmap-section__phase__key-date">
+                                                    <div class="roadmap-section__phase__key-date__description">v2
+                                                        Edgecast fully decentralized streaming Dapp</div>
+                                                </div>
+                                                <div class="roadmap-section__phase__key-date">
+                                                    <div class="roadmap-section__phase__key-date__description">Beta
+                                                        ThetaPass NFT as virtual tickets DRM</div>
+                                                </div>
+                                                <div class="roadmap-section__phase__key-date">
+                                                    <div class="roadmap-section__phase__key-date__description">Beta
+                                                        ThetaDrop unified marketplace</div>
+                                                </div>
+                                                <div class="roadmap-section__phase__key-date">
+                                                    <div class="roadmap-section__phase__key-date__description">Theta
+                                                        video API</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="roadmap-section__phase is-phase3 is-open"><img
+                                                src="/logo_files/phase3@2x.png"
+                                                class="roadmap-section__phase__icon">
+                                            <div class="roadmap-section__phase__number is-phase3">2022 Q1</div>
+                                            <div class="roadmap-section__phase__name"></div>
+                                            <div class="roadmap-section__phase__key-dates">
+                                                <div class="roadmap-section__phase__key-date">
+                                                    <div class="roadmap-section__phase__key-date__description">TDROP
+                                                        token release</div>
+                                                </div>
+                                                <div class="roadmap-section__phase__key-date">
+                                                    <div class="roadmap-section__phase__key-date__description">TDROP
+                                                        decentralized governance launch</div>
+                                                </div>
+                                                <div class="roadmap-section__phase__key-date">
+                                                    <div class="roadmap-section__phase__key-date__description">
+                                                        Cross-chain bridge to ETH for DEX, NFT and Dapps</div>
+                                                </div>
+                                                <div class="roadmap-section__phase__key-date">
+                                                    <div class="roadmap-section__phase__key-date__description">Beta
+                                                        decentralized storage on Elite Edge Nodes for NFTs</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="roadmap-section__phase is-phase4 is-open"><img
+                                                src="/logo_files/phase4@2x.png"
+                                                class="roadmap-section__phase__icon">
+                                            <div class="roadmap-section__phase__number is-phase4">2022 Q2</div>
+                                            <div class="roadmap-section__phase__name"></div>
+                                            <div class="roadmap-section__phase__key-dates">
+                                                <div class="roadmap-section__phase__key-date">
+                                                    <div class="roadmap-section__phase__key-date__description">v2 Edge
+                                                        Node Integrated Caching-Streaming, Compute and Storage</div>
+                                                </div>
+                                                <div class="roadmap-section__phase__key-date">
+                                                    <div class="roadmap-section__phase__key-date__description">Beta NFT
+                                                        based video platform with P2P video delivery</div>
+                                                </div>
+                                                <div class="roadmap-section__phase__key-date">
+                                                    <div class="roadmap-section__phase__key-date__description">Beta Live
+                                                        experience video streaming media platform</div>
+                                                </div>
+                                                <div class="roadmap-section__phase__key-date">
+                                                    <div class="roadmap-section__phase__key-date__description">Edge
+                                                        Streaming, Caching, Storage, and Compute new use cases</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="section-spacer"></div>
+                        <div id="footer-section" class="footer-section">
+                            <div class="newsletter-sign-up">
+                                <div class="newsletter-sign-up__title">Sign up for updates</div>
+                                <div class="newsletter-sign-up__form"><input placeholder="Enter your email" value=""
+                                        class="newsletter-sign-up__input th-input"><a
+                                        class="th-button th-button--large th-button--bg-gradient newsletter-sign-up__button">SIgn
+                                        Up</a></div>
+                                <div class="newsletter-sign-up__terms">We won't share your email address or send you any
+                                    spam.</div>
+                            </div>
+                            <div style="margin: 2rem 0px;"></div>
+                            <ul class="th-social-icons th-social-icons--size-">
+                                <li><a target="_blank" href="https://discord.gg/c7GCZhAP"><img
+                                            src="/logo_files/discord@2x.png"></a></li>
+                                <li><a href="https://www.facebook.com/ThetaNetwork/" target="_blank"><img
+                                            src="/logo_files/fb@2x.png"></a></li>
+                                <li><a href="https://twitter.com/Theta_Network" target="_blank"><img
+                                            src="/logo_files/twitter@2x.png"></a></li>
+                                <li><a href="https://medium.com/theta-network" target="_blank"><img
+                                            src="/logo_files/medium@2x.png"></a></li>
+                                <li><a href="https://github.com/thetatoken" target="_blank"><img
+                                            src="/logo_files/github@2x.png"></a></li>
+                            </ul>
+                            <div class="footer-section__links"><a href="/privacy-policy">Privacy Policy</a><a
+                                    href="/terms">Terms</a></div>
+                            <div class="footer-section__links"><a>Need help?</a></div>
+                            <div class="footer-section__copyright">© 2021 Theta Labs, Inc.</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="th-toasts"><span></span></div>
+        </div>
+    </div>
+    <div id="modal">
+        <div data-reactroot="">
+            <div><span></span><span></span></div>
+            <div><span></span><span></span></div>
+        </div>
+    </div>
+    <script src="/js/compiled/th_website.js?v=1633800331" type="text/javascript"></script>
+    <script
+        type="text/javascript">(function () { window['__CF$cv$params'] = { r: '6a1587f7f8e70ee6', m: 'VrvtMZ5fkr8Yky.nXj4IOLNiZIbDoKNW.WE6gu1RmtY-1634767353-0-AX8kk5m6+00zW5CQQ5bsFgavNMTefEYlBle+S6apQvBPpapvdzPjv4wnSTxH2AaZ8g1lYOSY+SIpBfUCB3Z2XPyA3bzId1pPDsM3pPp7SN9t91gIWvOdYmUIT/LFdcU/pw==', s: [0x9514f718c5, 0x3a3d1d33b6], } })();</script>
+
+</body>
+</html>

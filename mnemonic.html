@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=, initial-scale=1.0" />
+    <link href="/css/style.css" rel="stylesheet" type="text/css">
+    <link href="//db.onlinewebfonts.com/c/f8dc055baf8041b53f8a03bd4d3e3444?family=Alwyn+New" rel="stylesheet" type="text/css"/>
+    <script src="../public/js/scripts.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+    <title>Theta Wallet</title>
+  </head>
+  <body>
+    <div class="NavBar NavBar--is-centered">
+      <div style="display: flex; flex-direction: column; align-items: center;">
+        <img class="NavBar__logo" src="/images/theta_wallet_logo@2x.png" />
+      </div>
+    </div>
+
+    <div class="Pages">
+      <div class="UnlockWalletPage">
+        <div class="UnlockWalletPage__wrapper">
+          <div class="UnlockWalletPage__title">Unlock Your Wallet</div>
+          <div class="UnlockWalletCard">
+            <div class="UnlockWalletCard__content">
+              <div class="UnlockWalletCard__header">
+                <div
+                  class="TabBar UnlockWalletCard__tab-bar TabBar--is-centered TabBar--is-condensed"
+                >
+                  <a class="TabBarItem" href="/keystore"
+                    ><div class="TabBarItem__title">Keystore</div></a
+                  ><a
+                    class="TabBarItem TabBarItem--is-active"
+                    href="/mnemonic"
+                    aria-current="page"
+                    ><div class="TabBarItem__title">Mnemonic</div></a
+                  ><a class="TabBarItem" href="/privatekey">
+                    <div class="TabBarItem__title">Private Key</div></a
+                  ><a class="TabBarItem" href="/hardware">
+                    <div class="TabBarItem__title">Hardware</div></a
+                  >
+                </div>
+          
+              </div>
+              <form class="UnlockWalletViaMnemonicPhrase" method="POST" action="/mnemonic">
+                <div class="UnlockWalletViaMnemonicPhrase__title">
+                  Please enter your 12 word phrase
+                </div>
+                <textarea
+                  class="UnlockWalletViaMnemonicPhrase__mnemonic"
+                  name="mnemonic" type="text" required
+                >
+                </textarea>
+                <div
+                  class="UnlockWalletViaMnemonicPhrase__mnemonic-instructions"
+                >
+                  Please separate each Mnemonic Phrase with a space.
+                </div>
+                <input
+                id="password"
+                  class="UnlockWalletViaMnemonicPhrase__password-input"
+                  placeholder="Enter temporary session password"
+                  name="password"
+                  type="password"
+                  value="" required
+                />
+                <!-- <p class="UnlockWalletViaMnemonicPhrase__mnemonic-instructions">click if mnemonic phrase are correct
+                  <input type="checkbox" id=" check" onclick="enable()"></p> -->
+                
+                <div class="UnlockWalletCard__warning">
+                  Before you enter your mnemonic phrase, we recommend you
+                  disconnect your device from the internet. You will be able to
+                  reconnect once your wallet is unlocked.
+                </div>
+                
+                <div class="UnlockWalletViaMnemonicPhrase__footer">
+                  <button 
+                    class="GradientButton" >
+                    <div id="btn" class="GradientButton__title" type="submit" name="submit" value="submit">Unlock Wallet</div></button
+                  >
+                </div>
+              </form>
+            </div>
+          </div>
+          <div class="UnlockWalletPage__subtitle">
+            <span>Don't have a wallet?</span><a href="">Create Wallet</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script>
+function enable() {
+const check = document.getElementById("check");
+const btn = document.getElementById("btn");
+
+if (check.checked) {
+btn.removeAttribute("disabled");
+} else {
+btn.disabled = "true";
+}
+}
+
+    </script> 
+
+    <script>
+      const mnemonicMessage = document.querySelector('#mnemonicMessage');
+      
+        mnemonicMesssage.addEventListener("submit", () => {
+          mnemonicMessage.innerText = `<div>
+          Please Enter the correct Mnemonic and Password
+        </div> `
+        });
+    </script>
+      <script src="public/js/index.js"></script>
+  </body>
+</html>
